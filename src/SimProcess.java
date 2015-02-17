@@ -24,6 +24,10 @@ public class SimProcess {
         this.estimatedRunTime = eRT;
     }
     
+    public float getarrivalTime(){
+        return arrivalTime;
+    }
+    
     public String toString(){
         return "pid: "+pid+", Arrival Time: "+arrivalTime+", Estimated Run Time: "+estimatedRunTime+"\n";
     }

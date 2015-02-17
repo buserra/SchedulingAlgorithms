@@ -1,5 +1,6 @@
 
 import java.util.ArrayList;
+import java.util.Collections;
 import java.util.Comparator;
 import java.util.Random;
 
@@ -14,6 +15,17 @@ import java.util.Random;
  * @author Buser
  */
 public class RandomQueue {
+    
+    public class CustomComparator implements Comparator<SimProcess> {
+    @Override
+        public int compare(SimProcess o1, SimProcess o2) {
+            float x = o1.getarrivalTime();
+            float y = o2.getarrivalTime();
+            if (x < y) return -1;
+            if (x > y) return 1;
+            return 0;
+        }
+    } 
     
     
     public ArrayList getQueue(int num){
@@ -35,14 +47,10 @@ public class RandomQueue {
             process = new SimProcess(pid,arrivalTime,estimatedRunTime);
             rando.add(process);
         }
-        
+        CustomComparator compare = new CustomComparator();
+        Collections.sort(rando, compare);
         return rando;
     }
     
-    public class CustomComparator implements Comparator<SimProcess> {
-    @Override
-    public int compare(SimProcess o1, SimProcess o2) {
-        return o1.arrivalTime().compareTo(o2.arrivalTime());
-    }
-}
+    
 }
