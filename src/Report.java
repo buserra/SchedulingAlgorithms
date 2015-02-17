@@ -10,9 +10,9 @@
  */
 public class Report {
     
-
+    public String name;
     
-    public Report(){
-        
+    public Report(String name){
+        this.name = name;
     }
 }
