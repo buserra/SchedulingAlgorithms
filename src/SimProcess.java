@@ -24,6 +24,11 @@ public class SimProcess {
         this.estimatedRunTime = eRT;
     }
     
+    @Override
+    protected Object clone() throws CloneNotSupportedException {
+        return super.clone();
+    }
+    
     public float getarrivalTime(){
         return arrivalTime;
     }

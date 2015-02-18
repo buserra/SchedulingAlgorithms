@@ -28,16 +28,18 @@ public class SchedulingAlogorithms {
         
         for(int i =0; i<4; i++){
           randomQueue = rando.getQueue(numberProcessInQueue);
-          for (SimProcess temp : randomQueue){
-              System.out.print(temp.toString());
-              
-          }
-          //String name = "Report for Run "+(i+1);
-          //Report report = new Report(name);
-          //fcfs.run(randomQueue, report);
+          String name = "Report for Run "+(i+1);
+          Report report = new Report(name);
+          fcfs.run(randomQueue, report);
           //sjf.run(randomQueue, report);
           //rr.run(randomQueue, report);
-          //System.out.println(report.toString()); 
-        }
+          System.out.println(report.toString());
+          /*
+            for (SimProcess temp : randomQueue){
+              System.out.print(temp.toString());
+          */
+              
+          }
+        
     }   
 }
