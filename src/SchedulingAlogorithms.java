@@ -19,13 +19,25 @@ public class SchedulingAlogorithms {
      */
     public static void main(String[] args) {
         // TODO code application logic here
-          Report report = new Report();
+          int numberProcessInQueue = 50;
           RandomQueue rando = new RandomQueue();
           ArrayList<SimProcess> randomQueue;
+          FCFS fcfs = new FCFS();
+          SJF sjf = new SJF();
+          RR rr = new RR();
         
         for(int i =0; i<4; i++){
-          randomQueue = rando.getQueue();
+          randomQueue = rando.getQueue(numberProcessInQueue);
+          for (SimProcess temp : randomQueue){
+              System.out.print(temp.toString());
+              
+          }
+          //String name = "Report for Run "+(i+1);
+          //Report report = new Report(name);
+          //fcfs.run(randomQueue, report);
+          //sjf.run(randomQueue, report);
+          //rr.run(randomQueue, report);
+          //System.out.println(report.toString()); 
         }
-    }
-    
+    }   
 }

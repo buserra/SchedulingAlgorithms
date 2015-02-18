@@ -10,4 +10,26 @@
  */
 public class SimProcess {
     
+    public String pid;
+    public float arrivalTime;
+    public float estimatedRunTime;
+    
+    //public int numberTimesInCPU;
+    //public int cpuArrivalTime;
+    //public int cpuFinishTime;
+    
+    public SimProcess(String pid, float aT, float eRT){
+        this.pid = pid;
+        this.arrivalTime = aT;
+        this.estimatedRunTime = eRT;
+    }
+    
+    public float getarrivalTime(){
+        return arrivalTime;
+    }
+    
+    public String toString(){
+        return "pid: "+pid+", Arrival Time: "+arrivalTime+", Estimated Run Time: "+estimatedRunTime+"\n";
+    }
+    
 }
