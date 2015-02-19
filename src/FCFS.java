@@ -40,6 +40,10 @@ public class FCFS{
             }
         }
         
+        for(SimProcess temp : inQueue){
+            System.out.print(temp.toString());
+        }}
+        /*
         do{
             //add new arrivals to cpu queue
             for(SimProcess temp : inQueue){
@@ -65,5 +69,5 @@ public class FCFS{
             
         }while(flag);
         
-    }   
+    }  */ 
 }
