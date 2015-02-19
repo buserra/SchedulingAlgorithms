@@ -13,6 +13,10 @@ public class SimProcess {
     public String pid;
     public float arrivalTime;
     public float estimatedRunTime;
+    public float timeCompleted = 0;
+    public float timeFirstCpu = 0;
+    boolean returningProcess = false;
+    boolean complete = false;
     
     //public int numberTimesInCPU;
     //public int cpuArrivalTime;

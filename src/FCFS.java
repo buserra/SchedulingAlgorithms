@@ -17,33 +17,25 @@ public class FCFS{
     //setQueue
     //getReport
     public ArrayList<SimProcess> cpuQueue = new ArrayList();
-    public ArrayList<SimProcess> inQueue = new ArrayList();
+    public ArrayList<SimProcess> inQueue;
+    public ArrayList<SimProcess> completedQueue = new ArrayList();
     
     public void run(ArrayList testQueue, Report report){
+        int queueLength;
         float cpuClock = 0;
         float tempArvalTme;
         boolean flag = true;
         ArrayList<SimProcess> qPoint;
         SimProcess spPoint;
         
-        qPoint = testQueue;
-        int queueLength = testQueue.size();
-        
-        //copy test queue
-        qPoint = testQueue;
-        for(SimProcess temp : qPoint){
-            try {
-                spPoint = (SimProcess) temp.clone();
-                inQueue.add(spPoint);
-            } catch (CloneNotSupportedException ex) {
-                Logger.getLogger(FCFS.class.getName()).log(Level.SEVERE, null, ex);
-            }
-        }
-        
+       //I will need this somewhere
+        inQueue = testQueue;
+        queueLength = inQueue.size();
+        /*
         for(SimProcess temp : inQueue){
             System.out.print(temp.toString());
-        }}
-        /*
+        }}*/
+        
         do{
             //add new arrivals to cpu queue
             for(SimProcess temp : inQueue){
@@ -54,12 +46,15 @@ public class FCFS{
                 }
             }
             
-            //send process to cpu
+            //send process to cpu or idle
             if(cpuQueue.size()>0){
                 //process
+                spPoint = cpuQueue.remove(0);
+                
+                
             }
             else{
-                System.out.println("Idle");
+                System.out.print("CPUTime: "+cpuClock+", Idle");
             }
             
             
@@ -69,5 +64,5 @@ public class FCFS{
             
         }while(flag);
         
-    }  */ 
+    }  
 }
