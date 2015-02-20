@@ -8,61 +8,43 @@ import java.util.logging.Logger;
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
-
 /**
  *
  * @author Buser
  */
-public class FCFS{
-    //setQueue
-    //getReport
-    public ArrayList<SimProcess> cpuQueue = new ArrayList();
-    public ArrayList<SimProcess> inQueue;
-    public ArrayList<SimProcess> completedQueue = new ArrayList();
-    
-    public void run(ArrayList testQueue, Report report){
-        int queueLength;
+public class FCFS {
+
+    public void run(ArrayList<SimProcess> inQueue, Report report) {
+        int queueLength,i;
         float cpuClock = 0;
-        float tempArvalTme;
-        boolean flag = true;
-        ArrayList<SimProcess> qPoint;
+        float timeRemaining;
+        boolean flag;
         SimProcess spPoint;
-        
-       //I will need this somewhere
-        inQueue = testQueue;
+
+        //I will need this somewhere
         queueLength = inQueue.size();
-        /*
-        for(SimProcess temp : inQueue){
-            System.out.print(temp.toString());
-        }}*/
-        
-        do{
-            //add new arrivals to cpu queue
-            for(SimProcess temp : inQueue){
-                tempArvalTme = temp.getarrivalTime();
-                if(tempArvalTme<cpuClock){
-                    inQueue.remove(temp);
-                    cpuQueue.add(temp);
+
+        for(i=0;i<queueLength;i++){
+            spPoint = inQueue.get(i);
+            flag = true;
+            do{
+                if(spPoint.arrivalTime > cpuClock){
+                    System.out.println("cpu clock = "+cpuClock+", Idle");
+                    cpuClock++;
                 }
-            }
-            
-            //send process to cpu or idle
-            if(cpuQueue.size()>0){
-                //process
-                spPoint = cpuQueue.remove(0);
-                
-                
-            }
-            else{
-                System.out.print("CPUTime: "+cpuClock+", Idle");
-            }
-            
-            
-            
-             
-            
-            
-        }while(flag);
-        
-    }  
+                else{
+                    spPoint.timeFirstCpu = cpuClock;
+                    timeRemaining = spPoint.estimatedRunTime;
+                    while(timeRemaining>0){
+                        System.out.println("cpu clock = "+cpuClock+", pid: "+spPoint.pid+", time remaining = "+timeRemaining+"AT: "+spPoint.arrivalTime);
+                        timeRemaining--;
+                        cpuClock++;
+                    }
+                    flag = false;
+                    spPoint.timeCompleted = cpuClock;
+                }
+            }while(flag);
+        }
+        report.run("FCFS", inQueue, cpuClock);
+    }
 }
