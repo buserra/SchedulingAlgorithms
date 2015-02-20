@@ -23,7 +23,7 @@ public class FCFS {
 
         //I will need this somewhere
         queueLength = inQueue.size();
-        System.out.println("CPU Activity for FCFS run "+run);
+        System.out.println("**********\nCPU Activity for FCFS run "+run+"\n**********");
         for(i=0;i<queueLength;i++){
             spPoint = inQueue.get(i);
             flag = true;
@@ -45,6 +45,7 @@ public class FCFS {
                 }
             }while(flag);
         }
+        System.out.println("\n");
         return cpuClock;
     }
 }

@@ -16,7 +16,7 @@ import java.util.Random;
  */
 public class RandomQueue {
     
-    public class CustomComparator implements Comparator<SimProcess> {
+    private class CustomComparator implements Comparator<SimProcess> {
     @Override
         public int compare(SimProcess o1, SimProcess o2) {
             float x = o1.getarrivalTime();
