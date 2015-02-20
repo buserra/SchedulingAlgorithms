@@ -1,21 +1,18 @@
 
 import java.util.ArrayList;
 
-/*
- * To change this license header, choose License Headers in Project Properties.
- * To change this template file, choose Tools | Templates
- * and open the template in the editor.
- */
-
-/**
- *
- * @author Buser
- */
 public class RR {
-  
-    
+
+
     public void run(ArrayList inQueue, Report report){
-        
-        
+
+      int queueLength,i;
+      float cpuClock = 0;
+      float timeRemaining;
+      boolean flag;
+      SimProcess spPoint;
+
+
+
     }
 }
