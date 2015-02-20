@@ -14,7 +14,7 @@ import java.util.logging.Logger;
  */
 public class FCFS {
 
-    public void run(ArrayList<SimProcess> inQueue, Report report) {
+    public float run(ArrayList<SimProcess> inQueue, int run) {
         int queueLength,i;
         float cpuClock = 0;
         float timeRemaining;
@@ -23,7 +23,7 @@ public class FCFS {
 
         //I will need this somewhere
         queueLength = inQueue.size();
-
+        System.out.println("CPU Activity for FCFS run "+run);
         for(i=0;i<queueLength;i++){
             spPoint = inQueue.get(i);
             flag = true;
@@ -36,7 +36,7 @@ public class FCFS {
                     spPoint.timeFirstCpu = cpuClock;
                     timeRemaining = spPoint.estimatedRunTime;
                     while(timeRemaining>0){
-                        System.out.println("cpu clock = "+cpuClock+", pid: "+spPoint.pid+", time remaining = "+timeRemaining+"AT: "+spPoint.arrivalTime);
+                        System.out.println("cpu clock = "+cpuClock+", pid: "+spPoint.pid+", time remaining = "+timeRemaining);
                         timeRemaining--;
                         cpuClock++;
                     }
@@ -45,6 +45,6 @@ public class FCFS {
                 }
             }while(flag);
         }
-        report.run("FCFS", inQueue, cpuClock);
+        return cpuClock;
     }
 }

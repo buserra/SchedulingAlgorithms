@@ -13,13 +13,11 @@ import java.util.ArrayList;
  */
 public class Report {
     
-    public String name;
-    
-    public Report(String name){
-        this.name = name;
-    }
+    public ArrayList<String> reports = new ArrayList();
     
     public void run(String type, ArrayList<SimProcess> inQueue, float totalClock){
+        
+        
         
     }
 }

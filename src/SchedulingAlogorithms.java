@@ -24,6 +24,7 @@ public class SchedulingAlogorithms {
           RandomQueue rando = new RandomQueue();
           ArrayList<ArrayList> randomQueues;
           ArrayList<SimProcess> temp;
+          Report report = new Report();
           FCFS fcfs = new FCFS();
           SJF sjf = new SJF();
           RR rr = new RR();
@@ -31,10 +32,10 @@ public class SchedulingAlogorithms {
         //for(int i =0; i<4; i++){
           int i = 1;
           randomQueues = rando.getQueue(numberProcessInQueue);
-          String name = "Report for Run "+(i+1);
-          Report report = new Report(name);
+          
           temp = randomQueues.get(0);
-          fcfs.run(temp, report);
+          fcfs.run(temp, i);
+          temp = randomQueues.get(2);
           //sjf.run(randomQueues.get(1);
           //rr.run(randomQueues.get(3);
           //System.out.println(report.toString());
