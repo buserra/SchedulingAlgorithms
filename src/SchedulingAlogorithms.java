@@ -21,6 +21,7 @@ public class SchedulingAlogorithms {
         // TODO code application logic here
           int numberProcessInQueue = 50;
           float quanta = 1;
+          float totalCPUClock;
           RandomQueue rando = new RandomQueue();
           ArrayList<ArrayList> randomQueues;
           ArrayList<SimProcess> temp;
@@ -34,14 +35,15 @@ public class SchedulingAlogorithms {
           int i = 1;
           randomQueues = rando.getQueue(numberProcessInQueue);
           
-          //**FCFS********/
-          //totalClock = fcfs.run(randomQueues.get(0), i);
-          //report.run(randomQueues.get(0), totalClock);
+          //**FCFS & set up report for run i********/
+          temp = randomQueues.get(0);
+          totalCPUClock = fcfs.run(temp, i);
+          report.setupReport(i,randomQueues.get(0));
+          report.run("FCFS", randomQueues.get(0), i, totalCPUClock);
           /********************************/
           
           //**SJF********/
-          sjf.run(randomQueues.get(1), i);
-          //report.run(randomQueues.get(1));
+          //report.run("SJF",randomQueues.get(1), i, sjf.run(randomQueues.get(1), i));
           /********************************/
           
           //**RR********/

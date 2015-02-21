@@ -39,7 +39,7 @@ public class SimProcess {
     }
     
     public String toString(){
-        return "pid: "+pid+", Arrival Time: "+arrivalTime+", Estimated Run Time: "+estimatedRunTime+"\n";
+        return "pid: "+pid+", Arrival Time: "+arrivalTime+", Estimated Run Time: "+estimatedRunTime;
     }
     
     public void calculateWaitTime(){
