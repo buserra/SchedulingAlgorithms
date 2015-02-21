@@ -18,7 +18,7 @@ public class SJF {
         int queueLength, i, k;
         float cpuClock = 0;
         float timeRemaining;
-        boolean flag = true;
+        boolean flag = false;
         ArrayList<SimProcess> cpuQueue = new ArrayList();
         SimProcess spPoint;
 
@@ -26,7 +26,7 @@ public class SJF {
         queueLength = inQueue.size();
         System.out.println("**********\nCPU Activity for SJF run " + run + "\n**********");
         k = 0;
-        i = 0;
+        //i = 0;
         do {
             //get new arrivals
             for (i = k; i < queueLength; i++) {
@@ -39,13 +39,14 @@ public class SJF {
             }
 
             //sort by sjf
-            SJF.CustomComparator compare = new SJF.CustomComparator();
-            Collections.sort(cpuQueue, compare);
+            SJF.CustomComparator jobTime = new SJF.CustomComparator();
+            Collections.sort(cpuQueue, jobTime);
 
             //run shortest job
             if (cpuQueue.isEmpty()) {
                 System.out.println("cpu clock = " + cpuClock + ", Idle");
                 cpuClock++;
+                
             } else {
                 spPoint = cpuQueue.remove(0);
                 spPoint.timeFirstCpu = cpuClock;
@@ -56,9 +57,16 @@ public class SJF {
                     cpuClock++;
                 }
                 spPoint.timeCompleted = cpuClock;
+                spPoint.complete = true;
+            }
+            
+            for(SimProcess temp : inQueue){
+                if (temp.complete){
+                    flag = true;
+                }
             }
 
-        } while (flag);
+        } while (!flag);
 
         System.out.println("\n");
         return cpuClock;
@@ -79,3 +87,4 @@ public class SJF {
             return 0;
         }
     }
+}
