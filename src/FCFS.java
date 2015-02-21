@@ -29,14 +29,15 @@ public class FCFS {
             flag = true;
             do{
                 if(spPoint.arrivalTime > cpuClock){
-                    System.out.println("cpu clock = "+cpuClock+", Idle");
+                    //System.out.println("cpu clock = "+cpuClock+", Idle");
                     cpuClock++;
                 }
                 else{
                     spPoint.timeFirstCpu = cpuClock;
+                    spPoint.waitingTime = cpuClock - spPoint.arrivalTime;
                     timeRemaining = spPoint.estimatedRunTime;
                     while(timeRemaining>0){
-                        System.out.println("cpu clock = "+cpuClock+", pid: "+spPoint.pid+", time remaining = "+timeRemaining);
+                        //System.out.println("cpu clock = "+cpuClock+", pid: "+spPoint.pid+", time remaining = "+timeRemaining);
                         timeRemaining--;
                         cpuClock++;
                     }

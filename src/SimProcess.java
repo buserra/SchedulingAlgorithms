@@ -13,6 +13,7 @@ public class SimProcess {
     public String pid;
     public float arrivalTime;
     public float estimatedRunTime;
+    public float waitingTime = 0;
     public float timeCompleted = 0;
     public float timeFirstCpu = 0;
     boolean returningProcess = false;
@@ -38,7 +39,11 @@ public class SimProcess {
     }
     
     public String toString(){
-        return "pid: "+pid+", Arrival Time: "+arrivalTime+", Estimated Run Time: "+estimatedRunTime+"\n";
+        return "pid: "+pid+", Arrival Time: "+arrivalTime+", Estimated Run Time: "+estimatedRunTime;
+    }
+    
+    public void calculateWaitTime(){
+        //waitingTime = ;
     }
     
 }

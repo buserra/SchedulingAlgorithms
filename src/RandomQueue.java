@@ -56,10 +56,10 @@ public class RandomQueue {
             rando2.add(process2);
             rando3.add(process3);
         }
-        CustomComparator compare = new CustomComparator();
-        Collections.sort(rando1, compare);
-        Collections.sort(rando2, compare);
-        Collections.sort(rando3, compare);
+        CustomComparator arrivalT = new CustomComparator();
+        Collections.sort(rando1, arrivalT);
+        Collections.sort(rando2, arrivalT);
+        Collections.sort(rando3, arrivalT);
         total.add(rando1);
         total.add(rando2);
         total.add(rando3);

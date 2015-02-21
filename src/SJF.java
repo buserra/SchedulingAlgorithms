@@ -16,6 +16,7 @@ public class SJF {
 
     public float run(ArrayList<SimProcess> inQueue, int run) {
         int queueLength, i, k;
+        int totalProcess = 0;
         float cpuClock = 0;
         float timeRemaining;
         boolean flag = true;
@@ -25,58 +26,63 @@ public class SJF {
         //I will need this somewhere
         queueLength = inQueue.size();
         System.out.println("**********\nCPU Activity for SJF run " + run + "\n**********");
-        k = 0;
-        i = 0;
-        do {
-            //get new arrivals
-            for (i = k; i < queueLength; i++) {
-                if (inQueue.get(i).arrivalTime < cpuClock) {
-                    cpuQueue.add(inQueue.get(i));
-                } else {
+        
+        k=0;
+        do{
+            //incoming process
+            for (i=k;i<queueLength;i++){
+                spPoint = inQueue.get(i);
+                if(spPoint.arrivalTime>cpuClock){
                     k = i;
                     break;
                 }
+                else{
+                    cpuQueue.add(spPoint);
+                }
             }
-
-            //sort by sjf
-            SJF.CustomComparator compare = new SJF.CustomComparator();
-            Collections.sort(cpuQueue, compare);
-
+            
             //run shortest job
-            if (cpuQueue.isEmpty()) {
-                System.out.println("cpu clock = " + cpuClock + ", Idle");
+            if(cpuQueue.isEmpty()){
+                System.out.println("cpu clock = "+cpuClock+", Idle");
                 cpuClock++;
-            } else {
+            }
+            else{
+                SJF.CustomComparator runTime = new SJF.CustomComparator();
+                Collections.sort(cpuQueue, runTime);
+                totalProcess++;
                 spPoint = cpuQueue.remove(0);
                 spPoint.timeFirstCpu = cpuClock;
+                spPoint.waitingTime = cpuClock - spPoint.arrivalTime;
                 timeRemaining = spPoint.estimatedRunTime;
-                while (timeRemaining > 0) {
-                    System.out.println("cpu clock = " + cpuClock + ", pid: " + spPoint.pid + ", time remaining = " + timeRemaining);
+                while(timeRemaining>0){
+                    System.out.println("cpu clock = "+cpuClock+", pid: "+spPoint.pid+", time remaining = "+timeRemaining);
                     timeRemaining--;
                     cpuClock++;
-                }
-                spPoint.timeCompleted = cpuClock;
+                    }
+                    spPoint.timeCompleted = cpuClock;   
             }
-
-        } while (flag);
-
-        System.out.println("\n");
-        return cpuClock;
+            if(totalProcess == queueLength){
+                flag = false;
+            }
+        }while(flag);
+        
+        
+    return cpuClock;
     }
-
+    
     private class CustomComparator implements Comparator<SimProcess> {
-
-        @Override
+    @Override
         public int compare(SimProcess o1, SimProcess o2) {
             float x = o1.estimatedRunTime;
             float y = o2.estimatedRunTime;
-            if (x < y) {
-                return -1;
-            }
-            if (x > y) {
-                return 1;
-            }
+            if (x < y) return -1;
+            if (x > y) return 1;
             return 0;
         }
+<<<<<<< HEAD
     }
+=======
+    } 
+    
+>>>>>>> b00701c39b82965943a436d4029569c75648d932
 }
