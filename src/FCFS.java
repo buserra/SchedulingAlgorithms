@@ -34,6 +34,7 @@ public class FCFS {
                 }
                 else{
                     spPoint.timeFirstCpu = cpuClock;
+                    spPoint.waitingTime = cpuClock - spPoint.arrivalTime;
                     timeRemaining = spPoint.estimatedRunTime;
                     while(timeRemaining>0){
                         System.out.println("cpu clock = "+cpuClock+", pid: "+spPoint.pid+", time remaining = "+timeRemaining);
