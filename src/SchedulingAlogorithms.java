@@ -28,29 +28,29 @@ public class SchedulingAlogorithms {
           FCFS fcfs = new FCFS();
           SJF sjf = new SJF();
           RR rr = new RR();
-        
+
         //for(int i =0; i<4; i++){
           //admin
           int i = 1;
           randomQueues = rando.getQueue(numberProcessInQueue);
-          
+
           //**FCFS********/
           //totalClock = fcfs.run(randomQueues.get(0), i);
           //report.run(randomQueues.get(0), totalClock);
           /********************************/
-          
+
           //**SJF********/
-          sjf.run(randomQueues.get(1), i);
+          //sjf.run(randomQueues.get(1), i);
           //report.run(randomQueues.get(1));
           /********************************/
-          
+
           //**RR********/
-          //rr.run(randomQueues.get(2));
+          //rr.run(randomQueues.get(2), i);
           //report.run(randomQueues.get(2));
           /********************************/
-          
+
         //}
-    }   
+    }
 }
 
 /*
