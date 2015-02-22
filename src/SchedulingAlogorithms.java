@@ -19,7 +19,7 @@ public class SchedulingAlogorithms {
      */
     public static void main(String[] args) {
         // TODO code application logic here
-          int numberProcessInQueue = 2;
+          int numberProcessInQueue = 50;
           float quanta = 1;
           float totalCPUClock;
           RandomQueue rando = new RandomQueue();

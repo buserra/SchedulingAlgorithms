@@ -28,9 +28,11 @@ public class RR {
                 queueCopy.get(count).estimatedRunTime--;
                 if (queueCopy.get(count).estimatedRunTime <= 0.0) {
                     inQueue.get(count).timeCompleted = cpuClock + 1;
-                    inQueue.get(count).waitingTime = inQueue.get(count).timeCompleted - (float)Math.ceil(inQueue.get(count).arrivalTime) - (float)Math.ceil(inQueue.get(count).estimatedRunTime);
+                    inQueue.get(count).waitingTime = inQueue.get(count).timeCompleted - (float)Math.ceil(inQueue.get(count).arrivalTime)
+                            - (float)Math.ceil(inQueue.get(count).estimatedRunTime) + (inQueue.get(count).timeFirstCpu - inQueue.get(count).arrivalTime);
+
                     inQueue.get(count).complete = true;
-                    //System.out.println(inQueue.get(count).pid + " is complete. CpuClock: " + cpuClock);
+                    //System.out.println(inQueue.get(count).pid + " is complete. CpuC.lock: " + cpuClock);
 
                 }
                 cpuClock++;
