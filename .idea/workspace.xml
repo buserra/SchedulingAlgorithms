@@ -1,22 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="3aa2e51f-cbf5-466d-bbc3-d7a2cb89fcd0" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/classes/FCFS.class" afterPath="$PROJECT_DIR$/build/classes/FCFS.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/classes/RR.class" afterPath="$PROJECT_DIR$/build/classes/RR.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/classes/RandomQueue.class" afterPath="$PROJECT_DIR$/build/classes/RandomQueue.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/classes/Report.class" afterPath="$PROJECT_DIR$/build/classes/Report.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/classes/SchedulingAlogorithms.class" afterPath="$PROJECT_DIR$/build/classes/SchedulingAlogorithms.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/classes/SimProcess.class" afterPath="$PROJECT_DIR$/build/classes/SimProcess.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/FCFS.java" afterPath="$PROJECT_DIR$/src/FCFS.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/RandomQueue.java" afterPath="$PROJECT_DIR$/src/RandomQueue.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/Report.java" afterPath="$PROJECT_DIR$/src/Report.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/SJF.java" afterPath="$PROJECT_DIR$/src/SJF.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/SchedulingAlogorithms.java" afterPath="$PROJECT_DIR$/src/SchedulingAlogorithms.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/SimProcess.java" afterPath="$PROJECT_DIR$/src/SimProcess.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/built-jar.properties" afterPath="$PROJECT_DIR$/build/built-jar.properties" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-    </list>
+    <list default="true" id="3aa2e51f-cbf5-466d-bbc3-d7a2cb89fcd0" name="Default" comment="" />
     <ignored path="SchedulingAlgorithms.iws" />
     <ignored path=".idea/workspace.xml" />
     <ignored path="$PROJECT_DIR$/out/" />
@@ -60,21 +45,21 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="RR.java" pinned="false" current-in-tab="false">
+      <file leaf-file-name="RR.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/RR.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0" vertical-offset="54" max-vertical-offset="630">
+            <state vertical-scroll-proportion="0.609375" vertical-offset="54" max-vertical-offset="630">
               <caret line="27" column="16" selection-start-line="27" selection-start-column="16" selection-end-line="27" selection-end-column="16" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="SJF.java" pinned="false" current-in-tab="true">
+      <file leaf-file-name="SJF.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/SJF.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.82173175" vertical-offset="701" max-vertical-offset="1290">
-              <caret line="81" column="5" selection-start-line="81" selection-start-column="5" selection-end-line="81" selection-end-column="5" />
+            <state vertical-scroll-proportion="0.0" vertical-offset="701" max-vertical-offset="1290">
+              <caret line="74" column="58" selection-start-line="74" selection-start-column="58" selection-end-line="74" selection-end-column="58" />
               <folding />
             </state>
           </provider>
@@ -511,14 +496,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/RR.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="54" max-vertical-offset="630">
-          <caret line="27" column="16" selection-start-line="27" selection-start-column="16" selection-end-line="27" selection-end-column="16" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/Report.java">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0" vertical-offset="1091" max-vertical-offset="1830">
@@ -537,8 +514,16 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/SJF.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.82173175" vertical-offset="701" max-vertical-offset="1290">
-          <caret line="81" column="5" selection-start-line="81" selection-start-column="5" selection-end-line="81" selection-end-column="5" />
+        <state vertical-scroll-proportion="0.0" vertical-offset="701" max-vertical-offset="1290">
+          <caret line="74" column="58" selection-start-line="74" selection-start-column="58" selection-end-line="74" selection-end-column="58" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/RR.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.609375" vertical-offset="54" max-vertical-offset="630">
+          <caret line="27" column="16" selection-start-line="27" selection-start-column="16" selection-end-line="27" selection-end-column="16" />
           <folding />
         </state>
       </provider>
