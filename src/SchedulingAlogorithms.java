@@ -29,28 +29,33 @@ public class SchedulingAlogorithms {
           FCFS fcfs = new FCFS();
           SJF sjf = new SJF();
           RR rr = new RR();
+
         
         for(int i =0; i<1; i++){
+
           randomQueues = rando.getQueue(numberProcessInQueue);
-          
+
           //**FCFS & set up report for run i********/
           temp = randomQueues.get(0);
           totalCPUClock = fcfs.run(temp, i);
           report.setupReport(i,randomQueues.get(0));
           report.run("FCFS", randomQueues.get(0), i, totalCPUClock);
-          /********************************/
-          
+
           //**SJF********/
+
           report.run("SJF",randomQueues.get(1), i, sjf.run(randomQueues.get(1), i));
           /********************************/
           
+
           //**RR********/
-          //rr.run(randomQueues.get(2));
+          //rr.run(randomQueues.get(2), i);
           //report.run(randomQueues.get(2));
           /********************************/
+
           System.out.println(report.reports.get(i));
         }
     }   
+
 }
 
 /*
