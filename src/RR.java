@@ -18,10 +18,14 @@ public class RR {
                 System.out.println("cpu clock = "+cpuClock+", Idle");
             }
             else{
+                if(queueCopy.get(count).timeFirstCpu == 0){
+                    inQueue.get(count).timeFirstCpu = cpuClock;
+                }
                 System.out.print(queueCopy.toString());
                 queueCopy.get(count).estimatedRunTime--;
                 if(queueCopy.get(count).estimatedRunTime <= 0){
-                    queueCopy.get(count).timeCompleted = cpuClock;
+                    inQueue.get(count).timeCompleted = cpuClock;
+                    inQueue.get(count).waitingTime = inQueue.get(count).timeCompleted - inQueue.get(count).arrivalTime - inQueue.get(count).estimatedRunTime;
                     queueCopy.remove(count);
                 }
             }

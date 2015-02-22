@@ -30,7 +30,7 @@ public class SchedulingAlogorithms {
           SJF sjf = new SJF();
           RR rr = new RR();
 
-        //for(int i =0; i<4; i++){
+          //for(int i =0; i<4; i++){
           //admin
           int i = 1;
           randomQueues = rando.getQueue(numberProcessInQueue);

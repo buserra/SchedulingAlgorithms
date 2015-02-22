@@ -79,10 +79,8 @@ public class SJF {
             if (x > y) return 1;
             return 0;
         }
-<<<<<<< HEAD
-    }
-=======
+
+
     } 
-    
->>>>>>> b00701c39b82965943a436d4029569c75648d932
+
 }
