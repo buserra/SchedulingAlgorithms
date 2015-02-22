@@ -5,33 +5,63 @@ import java.util.ArrayList;
 public class RR {
 
 
-    public Float run(ArrayList<SimProcess>  inQueue, int run){
-      int queueLength = 0, count = 0;
-      ArrayList<SimProcess> queueCopy= (ArrayList<SimProcess>)inQueue.clone();
-      float cpuClock = (int)Math.ceil(queueCopy.get(0).arrivalTime);
-      float timeRemaining;
-      boolean flag;
-      SimProcess spPoint;
+    public Float run(ArrayList<SimProcess> inQueue, int run) {
+        int queueLength = 0, count = 0;
+        boolean completed = false;
+        ArrayList<SimProcess> queueCopy = new ArrayList<SimProcess>(inQueue.size());
+        for (SimProcess x : inQueue) {
+            queueCopy.add(new SimProcess(x));
+        }
 
-        while(queueCopy.size() > 0){
-            if(queueCopy.get(count).arrivalTime > cpuClock){
+        float cpuClock = (float) Math.ceil(queueCopy.get(0).arrivalTime);
+
+
+        while (!completed) {
+            if (inQueue.get(count).arrivalTime > cpuClock) {
                 //System.out.println("cpu clock = "+cpuClock+", Idle");
-            }
-            else{
-                if(queueCopy.get(count).timeFirstCpu == 0){
+                cpuClock = checkCpuIdle(inQueue, cpuClock);
+            } else if (!inQueue.get(count).complete) {
+                if (inQueue.get(count).timeFirstCpu == 0.0) {
                     inQueue.get(count).timeFirstCpu = cpuClock;
                 }
-                System.out.print(queueCopy.toString());
+                //System.out.println(inQueue.get(count).pid + " is running. CpuClock: " + cpuClock);
                 queueCopy.get(count).estimatedRunTime--;
-                if(queueCopy.get(count).estimatedRunTime <= 0){
-                    inQueue.get(count).timeCompleted = cpuClock;
-                    inQueue.get(count).waitingTime = inQueue.get(count).timeCompleted - inQueue.get(count).arrivalTime - inQueue.get(count).estimatedRunTime;
-                    queueCopy.remove(count);
+                if (queueCopy.get(count).estimatedRunTime <= 0.0) {
+                    inQueue.get(count).timeCompleted = cpuClock + 1;
+                    inQueue.get(count).waitingTime = inQueue.get(count).timeCompleted - (float)Math.ceil(inQueue.get(count).arrivalTime) - (float)Math.ceil(inQueue.get(count).estimatedRunTime);
+                    inQueue.get(count).complete = true;
+                    //System.out.println(inQueue.get(count).pid + " is complete. CpuClock: " + cpuClock);
+
                 }
+                cpuClock++;
             }
-            cpuClock++;
-            count = (queueCopy.size() - 1 != 0 && count % (queueCopy.size() - 1) == 0)? 0 : count++;
+
+            completed = checkComplete(inQueue);
+            count++;
+            count = (count > (queueCopy.size() - 1)) ? 0 : count++;
         }
         return cpuClock;
     }
+
+    public static boolean checkComplete(ArrayList<SimProcess> que) {
+        boolean comp = true;
+        for (SimProcess x : que) {
+            if (x.complete == false) {
+                comp = false;
+            }
+        }
+        return comp;
+    }
+
+    public static float checkCpuIdle(ArrayList<SimProcess> que, float clock) {
+
+        for (SimProcess x : que) {
+            if (x.arrivalTime < clock && x.complete == false) {
+                return clock;
+            }
+        }
+            clock++;
+            return clock;
+    }
+
 }

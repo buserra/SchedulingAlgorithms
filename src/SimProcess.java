@@ -30,6 +30,13 @@ public class SimProcess {
         this.arrivalTime = aT;
         this.estimatedRunTime = eRT;
     }
+
+    public SimProcess(SimProcess original){
+        this.id = original.id;
+        this.pid = original.pid;
+        this.arrivalTime = original.arrivalTime;
+        this.estimatedRunTime = original.estimatedRunTime;
+    }
     
    
     public float getarrivalTime(){
