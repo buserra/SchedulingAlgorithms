@@ -46,7 +46,7 @@ public class FCFS {
                 }
             }while(flag);
         }
-        System.out.println("\n");
+        //System.out.println("\n");
         return cpuClock;
     }
 }

@@ -15,7 +15,7 @@ public class RR {
 
         while(queueCopy.size() > 0){
             if(queueCopy.get(count).arrivalTime > cpuClock){
-                System.out.println("cpu clock = "+cpuClock+", Idle");
+                //System.out.println("cpu clock = "+cpuClock+", Idle");
             }
             else{
                 if(queueCopy.get(count).timeFirstCpu == 0){

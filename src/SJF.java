@@ -25,7 +25,7 @@ public class SJF {
 
         //I will need this somewhere
         queueLength = inQueue.size();
-        System.out.println("**********\nCPU Activity for SJF run " + run + "\n**********");
+        //System.out.println("**********\nCPU Activity for SJF run " + run + "\n**********");
         
         k=0;
         do{
@@ -43,7 +43,7 @@ public class SJF {
             
             //run shortest job
             if(cpuQueue.isEmpty()){
-                System.out.println("cpu clock = "+cpuClock+", Idle");
+                //System.out.println("cpu clock = "+cpuClock+", Idle");
                 cpuClock++;
             }
             else{
@@ -55,7 +55,7 @@ public class SJF {
                 spPoint.waitingTime = cpuClock - spPoint.arrivalTime;
                 timeRemaining = spPoint.estimatedRunTime;
                 while(timeRemaining>0){
-                    System.out.println("cpu clock = "+cpuClock+", pid: "+spPoint.pid+", time remaining = "+timeRemaining);
+                    //System.out.println("cpu clock = "+cpuClock+", pid: "+spPoint.pid+", time remaining = "+timeRemaining);
                     timeRemaining--;
                     cpuClock++;
                     }

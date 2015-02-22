@@ -19,7 +19,7 @@ public class SchedulingAlogorithms {
      */
     public static void main(String[] args) {
         // TODO code application logic here
-          int numberProcessInQueue = 50;
+          int numberProcessInQueue = 6;
           float quanta = 1;
           float totalCPUClock;
           RandomQueue rando = new RandomQueue();
@@ -42,14 +42,12 @@ public class SchedulingAlogorithms {
           report.run("FCFS", randomQueues.get(0), i, totalCPUClock);
 
           //**SJF********/
-
           report.run("SJF",randomQueues.get(1), i, sjf.run(randomQueues.get(1), i));
           /********************************/
           
 
           //**RR********/
-          //rr.run(randomQueues.get(2), i);
-          //report.run(randomQueues.get(2));
+          report.run("RR",randomQueues.get(2),i,sjf.run(randomQueues.get(2), i));
           /********************************/
 
           System.out.println(report.reports.get(i));
