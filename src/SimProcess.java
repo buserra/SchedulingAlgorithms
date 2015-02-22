@@ -10,6 +10,7 @@
  */
 public class SimProcess {
     
+    int id;
     public String pid;
     public float arrivalTime;
     public float estimatedRunTime;
@@ -23,7 +24,8 @@ public class SimProcess {
     //public int cpuArrivalTime;
     //public int cpuFinishTime;
     
-    public SimProcess(String pid, float aT, float eRT){
+    public SimProcess(int id, String pid, float aT, float eRT){
+        this.id = id;
         this.pid = pid;
         this.arrivalTime = aT;
         this.estimatedRunTime = eRT;

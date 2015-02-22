@@ -23,7 +23,7 @@ public class FCFS {
 
         //I will need this somewhere
         queueLength = inQueue.size();
-        System.out.println("**********\nCPU Activity for FCFS run "+run+"\n**********");
+        //System.out.println("**********\nCPU Activity for FCFS run "+run+"\n**********");
         for(i=0;i<queueLength;i++){
             spPoint = inQueue.get(i);
             flag = true;

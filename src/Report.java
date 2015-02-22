@@ -15,9 +15,10 @@ import java.util.Comparator;
 public class Report {
 
     public ArrayList<String> reports = new ArrayList();
+    public ArrayList<Float> data = new ArrayList();
 
     public void run(String name, ArrayList<SimProcess> inQueue, int reportNum, float totalClock) {
-        int i = 0;
+        
         String temp;
         float avgTurnAroundTime;
         float avgWaitTime;
@@ -27,10 +28,23 @@ public class Report {
         temp = reports.get(reportNum);
 
         avgTurnAroundTime = this.calulateTAT(inQueue);
+        data.add(avgTurnAroundTime);
         avgWaitTime = this.calculateAWT(inQueue);
+        data.add(avgWaitTime);
         avgResponceTime = this.calculateART(inQueue);
+        data.add(avgResponceTime);
         throughPut = ((float) inQueue.size()) / totalClock;
-
+        data.add(throughPut);
+        
+        temp = temp + "**********\n"
+                + name +" Processes\n"
+                + "     Average turn-around time: "+avgTurnAroundTime+"\n"
+                + "     Average waiting time: "+avgWaitTime+"\n"
+                + "     Average response time: "+avgResponceTime+"\n"
+                + "     Trough Put: "+throughPut+"\n"
+                + "**********\n";
+        
+        reports.add(reportNum, temp);
     }
 
     public void setupReport(int i, ArrayList<SimProcess> inQueue) {
@@ -47,7 +61,7 @@ public class Report {
             }
         }
         temp = temp +"\n\n";
-        reports.add(i, temp);
+        reports.add(temp);
     }
 
     private float calculateART(ArrayList<SimProcess> inQueue) {
@@ -90,8 +104,8 @@ public class Report {
 
         @Override
         public int compare(SimProcess o1, SimProcess o2) {
-            float x = o1.getarrivalTime();
-            float y = o2.getarrivalTime();
+            int x = o1.id;
+            int y = o2.id;
             if (x < y) {
                 return -1;
             }

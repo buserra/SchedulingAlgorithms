@@ -73,14 +73,11 @@ public class SJF {
     private class CustomComparator implements Comparator<SimProcess> {
     @Override
         public int compare(SimProcess o1, SimProcess o2) {
-            float x = o1.estimatedRunTime;
-            float y = o2.estimatedRunTime;
-            if (x < y) return -1;
-            if (x > y) return 1;
-            return 0;
+        float x = o1.estimatedRunTime;
+        float y = o2.estimatedRunTime;
+        if (x < y) return -1;
+        if (x > y) return 1;
+        return 0;
         }
-
-
-    } 
-
+    }
 }
