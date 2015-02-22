@@ -5,7 +5,7 @@ import java.util.ArrayList;
 public class RR {
 
 
-    public void run(ArrayList<SimProcess>  inQueue, int run){
+    public Float run(ArrayList<SimProcess>  inQueue, int run){
       int queueLength = 0, count = 0;
       ArrayList<SimProcess> queueCopy= (ArrayList<SimProcess>)inQueue.clone();
       float cpuClock = (int)Math.ceil(queueCopy.get(0).arrivalTime);
@@ -32,5 +32,6 @@ public class RR {
             cpuClock++;
             count = (queueCopy.size() - 1 != 0 && count % (queueCopy.size() - 1) == 0)? 0 : count++;
         }
+        return cpuClock;
     }
 }
