@@ -33,6 +33,7 @@ public class RandomQueue {
         SimProcess process2;
         SimProcess process3;
         String pid;
+        int id;
         float arrivalTime;
         float estimatedRunTime;
         float arrivalMin = 0;
@@ -46,12 +47,13 @@ public class RandomQueue {
         ArrayList<ArrayList> total = new ArrayList();
         
         for(int i =0;i<num;i++){
-            pid = "p"+(i+1);
+            id = (i+1);
+            pid = "p"+id;
             arrivalTime = generator.nextFloat() * (arrivalMax - arrivalMin) + arrivalMin;
             estimatedRunTime = generator.nextFloat() * (estimateTimeMax - estimateTimeMin) + estimateTimeMin;
-            process1 = new SimProcess(pid,arrivalTime,estimatedRunTime);
-            process2 = new SimProcess(pid,arrivalTime,estimatedRunTime);
-            process3 = new SimProcess(pid,arrivalTime,estimatedRunTime);
+            process1 = new SimProcess(id,pid,arrivalTime,estimatedRunTime);
+            process2 = new SimProcess(id,pid,arrivalTime,estimatedRunTime);
+            process3 = new SimProcess(id,pid,arrivalTime,estimatedRunTime);
             rando1.add(process1);
             rando2.add(process2);
             rando3.add(process3);

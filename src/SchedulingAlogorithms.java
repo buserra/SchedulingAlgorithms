@@ -30,9 +30,7 @@ public class SchedulingAlogorithms {
           SJF sjf = new SJF();
           RR rr = new RR();
         
-        //for(int i =0; i<4; i++){
-          //admin
-          int i = 1;
+        for(int i =0; i<1; i++){
           randomQueues = rando.getQueue(numberProcessInQueue);
           
           //**FCFS & set up report for run i********/
@@ -43,15 +41,15 @@ public class SchedulingAlogorithms {
           /********************************/
           
           //**SJF********/
-          //report.run("SJF",randomQueues.get(1), i, sjf.run(randomQueues.get(1), i));
+          report.run("SJF",randomQueues.get(1), i, sjf.run(randomQueues.get(1), i));
           /********************************/
           
           //**RR********/
           //rr.run(randomQueues.get(2));
           //report.run(randomQueues.get(2));
           /********************************/
-          
-        //}
+          System.out.println(report.reports.get(i));
+        }
     }   
 }
 
