@@ -14,7 +14,7 @@ import java.util.Comparator;
  */
 public class SJF {
 
-    public float run(ArrayList<SimProcess> inQueue, int run) {
+    public float run(ArrayList<SimProcess> inQueue) {
         int queueLength, i, k;
         int totalProcess = 0;
         float cpuClock = 0;

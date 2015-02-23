@@ -19,11 +19,11 @@ public class SchedulingAlogorithms {
      */
     public static void main(String[] args) {
         // TODO code application logic here
+          int i;
           int numberProcessInQueue = 50;
           float quanta = 1;
           float totalCPUClock;
           RandomQueue rando = new RandomQueue();
-          ArrayList<ArrayList> randomQueues;
           ArrayList<SimProcess> temp;
           Report report = new Report();
           FCFS fcfs = new FCFS();
@@ -31,38 +31,30 @@ public class SchedulingAlogorithms {
           RR rr = new RR();
 
 
-        for(int i =0; i<1; i++){
-
-          randomQueues = rando.getQueue(numberProcessInQueue);
-
+        for(i =0; i<5; i++){
+          //get random queue
+          temp = rando.getQueue(numberProcessInQueue);
+          report.setupReport(i,temp);
+          
           //**FCFS & set up report for run i********/
-          temp = randomQueues.get(0);
-          totalCPUClock = fcfs.run(temp, i);
-          report.setupReport(i,randomQueues.get(0));
-          report.run("FCFS", randomQueues.get(0), i, totalCPUClock);
+          totalCPUClock = fcfs.run(temp);
+          report.runFCFS("FCFS", temp, i, totalCPUClock);
+          /********************************/
 
           //**SJF********/
-          temp = randomQueues.get(1);
-          totalCPUClock = sjf.run(temp, i);
-          report.run("SJF",randomQueues.get(1), i, totalCPUClock);
+          totalCPUClock = sjf.run(temp);
+          report.runSJF("SJF",temp, i, totalCPUClock);
           /********************************/
           
 
           //**RR********/
-          temp = randomQueues.get(2);
-          totalCPUClock = rr.run(temp, i);
-          report.run("RR",randomQueues.get(2),i, totalCPUClock);
+          totalCPUClock = rr.run(temp);
+          report.runRR("RR",temp,i, totalCPUClock);
           /********************************/
-
-          System.out.println(report.reports.get(i));
         }
+        report.finalReport((i+1));
     }   
 
 }
 
-/*
-ArrayList prnt = randomQueues.get(0);
-            for (Object temp : prnt){
-              System.out.print(temp.toString());
-            }
-*/
+

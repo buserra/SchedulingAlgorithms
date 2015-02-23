@@ -5,7 +5,7 @@ import java.util.ArrayList;
 public class RR {
 
 
-    public Float run(ArrayList<SimProcess> inQueue, int run) {
+    public Float run(ArrayList<SimProcess> inQueue) {
         int queueLength = 0, count = 0;
         boolean completed = false;
         ArrayList<SimProcess> queueCopy = new ArrayList<SimProcess>(inQueue.size());

@@ -30,8 +30,6 @@ public class RandomQueue {
     
     public ArrayList getQueue(int num){
         SimProcess process1;
-        SimProcess process2;
-        SimProcess process3;
         String pid;
         int id;
         float arrivalTime;
@@ -41,10 +39,7 @@ public class RandomQueue {
         float estimateTimeMin = (float) 0.1;
         float estimateTimeMax = 10;
         Random generator = new Random();
-        ArrayList<SimProcess> rando1 = new ArrayList();
-        ArrayList<SimProcess> rando2 = new ArrayList();
-        ArrayList<SimProcess> rando3 = new ArrayList();
-        ArrayList<ArrayList> total = new ArrayList();
+        ArrayList<SimProcess> rando = new ArrayList();
         
         for(int i =0;i<num;i++){
             id = (i+1);
@@ -52,20 +47,11 @@ public class RandomQueue {
             arrivalTime = generator.nextFloat() * (arrivalMax - arrivalMin) + arrivalMin;
             estimatedRunTime = generator.nextFloat() * (estimateTimeMax - estimateTimeMin) + estimateTimeMin;
             process1 = new SimProcess(id,pid,arrivalTime,estimatedRunTime);
-            process2 = new SimProcess(id,pid,arrivalTime,estimatedRunTime);
-            process3 = new SimProcess(id,pid,arrivalTime,estimatedRunTime);
-            rando1.add(process1);
-            rando2.add(process2);
-            rando3.add(process3);
+            rando.add(process1);
         }
         CustomComparator arrivalT = new CustomComparator();
-        Collections.sort(rando1, arrivalT);
-        Collections.sort(rando2, arrivalT);
-        Collections.sort(rando3, arrivalT);
-        total.add(rando1);
-        total.add(rando2);
-        total.add(rando3);
-        return total;
+        Collections.sort(rando, arrivalT);
+        return rando;
     }
     
     

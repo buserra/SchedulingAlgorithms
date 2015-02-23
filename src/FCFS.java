@@ -14,7 +14,7 @@ import java.util.logging.Logger;
  */
 public class FCFS {
 
-    public float run(ArrayList<SimProcess> inQueue, int run) {
+    public float run(ArrayList<SimProcess> inQueue) {
         int queueLength,i;
         float cpuClock = 0;
         float timeRemaining;
