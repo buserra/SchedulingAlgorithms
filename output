@@ -1,0 +1,401 @@
+**********
+STATISTICS REPORT for RUN 1
+**********
+Queue Processes
+**********
+pid: p1, Arrival Time: 30.065262, Estimated Run Time: 0.21413738, 
+pid: p2, Arrival Time: 124.22566, Estimated Run Time: 6.7534227, 
+pid: p3, Arrival Time: 77.89427, Estimated Run Time: 9.231523, 
+pid: p4, Arrival Time: 3.4926891, Estimated Run Time: 5.715866, 
+pid: p5, Arrival Time: 105.22858, Estimated Run Time: 4.9409676, 
+pid: p6, Arrival Time: 30.695618, Estimated Run Time: 7.2298985, 
+pid: p7, Arrival Time: 190.82274, Estimated Run Time: 5.616709, 
+pid: p8, Arrival Time: 167.44748, Estimated Run Time: 0.32488, 
+pid: p9, Arrival Time: 75.59034, Estimated Run Time: 6.6492496, 
+pid: p10, Arrival Time: 157.88315, Estimated Run Time: 8.951126, 
+pid: p11, Arrival Time: 10.547447, Estimated Run Time: 5.2809367, 
+pid: p12, Arrival Time: 36.401047, Estimated Run Time: 4.8044276, 
+pid: p13, Arrival Time: 48.79217, Estimated Run Time: 6.1774387, 
+pid: p14, Arrival Time: 110.756454, Estimated Run Time: 7.214041, 
+pid: p15, Arrival Time: 18.753551, Estimated Run Time: 1.6995938, 
+pid: p16, Arrival Time: 146.5021, Estimated Run Time: 2.5260427, 
+pid: p17, Arrival Time: 56.190086, Estimated Run Time: 7.396462, 
+pid: p18, Arrival Time: 137.94533, Estimated Run Time: 0.27367705, 
+pid: p19, Arrival Time: 72.05278, Estimated Run Time: 2.6984723, 
+pid: p20, Arrival Time: 176.87292, Estimated Run Time: 8.684549, 
+pid: p21, Arrival Time: 139.4197, Estimated Run Time: 1.2673635, 
+pid: p22, Arrival Time: 165.66458, Estimated Run Time: 3.057567, 
+pid: p23, Arrival Time: 45.454086, Estimated Run Time: 3.185872, 
+pid: p24, Arrival Time: 136.58475, Estimated Run Time: 7.3254485, 
+pid: p25, Arrival Time: 77.05566, Estimated Run Time: 2.6595998, 
+pid: p26, Arrival Time: 82.64016, Estimated Run Time: 8.799617, 
+pid: p27, Arrival Time: 198.01183, Estimated Run Time: 0.8319014, 
+pid: p28, Arrival Time: 154.17685, Estimated Run Time: 7.570256, 
+pid: p29, Arrival Time: 90.580414, Estimated Run Time: 9.191547, 
+pid: p30, Arrival Time: 84.24729, Estimated Run Time: 0.27537295, 
+pid: p31, Arrival Time: 138.24498, Estimated Run Time: 4.8049436, 
+pid: p32, Arrival Time: 57.713924, Estimated Run Time: 1.2775378, 
+pid: p33, Arrival Time: 134.69759, Estimated Run Time: 2.53829, 
+pid: p34, Arrival Time: 95.20238, Estimated Run Time: 9.037752, 
+pid: p35, Arrival Time: 135.86719, Estimated Run Time: 8.219675, 
+pid: p36, Arrival Time: 72.63378, Estimated Run Time: 4.2929554, 
+pid: p37, Arrival Time: 99.09571, Estimated Run Time: 4.032124, 
+pid: p38, Arrival Time: 7.5339437, Estimated Run Time: 7.941235, 
+pid: p39, Arrival Time: 151.5619, Estimated Run Time: 6.1423345, 
+pid: p40, Arrival Time: 110.14555, Estimated Run Time: 5.079013, 
+pid: p41, Arrival Time: 27.08851, Estimated Run Time: 5.1584606, 
+pid: p42, Arrival Time: 94.18987, Estimated Run Time: 0.20337598, 
+pid: p43, Arrival Time: 137.9828, Estimated Run Time: 6.2371364, 
+pid: p44, Arrival Time: 70.696175, Estimated Run Time: 2.9744668, 
+pid: p45, Arrival Time: 91.12778, Estimated Run Time: 2.823928, 
+pid: p46, Arrival Time: 88.52172, Estimated Run Time: 7.7851796, 
+pid: p47, Arrival Time: 102.85448, Estimated Run Time: 4.3227544, 
+pid: p48, Arrival Time: 145.03055, Estimated Run Time: 7.614536, 
+pid: p49, Arrival Time: 156.00569, Estimated Run Time: 2.944482, 
+pid: p50, Arrival Time: 56.019245, Estimated Run Time: 0.37652725, 
+**********
+FCFS Processes for Run: 1
+     Average turn-around time: 43.27583
+     Average waiting time: 37.93582
+     Average response time: 37.93582
+     Trough Put: 0.18248175
+**********
+**********
+SJF Processes for Run: 1
+     Average turn-around time: 19.015827
+     Average waiting time: 13.675825
+     Average response time: 13.675825
+     Trough Put: 0.24038461
+**********
+**********
+RR Processes for Run: 1
+     Average turn-around time: 57.89583
+     Average waiting time: 65.69583
+     Average response time: 13.675825
+     Trough Put: 0.18248175
+**********
+**********
+STATISTICS REPORT for RUN 2
+**********
+Queue Processes
+**********
+pid: p1, Arrival Time: 121.74567, Estimated Run Time: 1.3133383, 
+pid: p2, Arrival Time: 178.33754, Estimated Run Time: 9.410315, 
+pid: p3, Arrival Time: 51.869358, Estimated Run Time: 1.0869193, 
+pid: p4, Arrival Time: 160.21263, Estimated Run Time: 6.802339, 
+pid: p5, Arrival Time: 0.6034374, Estimated Run Time: 2.3912218, 
+pid: p6, Arrival Time: 124.64509, Estimated Run Time: 8.666287, 
+pid: p7, Arrival Time: 79.13765, Estimated Run Time: 0.8779345, 
+pid: p8, Arrival Time: 196.69061, Estimated Run Time: 0.7785983, 
+pid: p9, Arrival Time: 154.37787, Estimated Run Time: 1.1776599, 
+pid: p10, Arrival Time: 153.2881, Estimated Run Time: 7.6204348, 
+pid: p11, Arrival Time: 134.95653, Estimated Run Time: 1.0470632, 
+pid: p12, Arrival Time: 17.218124, Estimated Run Time: 8.760382, 
+pid: p13, Arrival Time: 168.45615, Estimated Run Time: 4.5645456, 
+pid: p14, Arrival Time: 152.88948, Estimated Run Time: 7.1738844, 
+pid: p15, Arrival Time: 79.463554, Estimated Run Time: 1.7959, 
+pid: p16, Arrival Time: 194.211, Estimated Run Time: 0.63864994, 
+pid: p17, Arrival Time: 83.57788, Estimated Run Time: 5.8677692, 
+pid: p18, Arrival Time: 108.653046, Estimated Run Time: 6.928576, 
+pid: p19, Arrival Time: 115.28022, Estimated Run Time: 6.893736, 
+pid: p20, Arrival Time: 20.872105, Estimated Run Time: 6.0416923, 
+pid: p21, Arrival Time: 160.95427, Estimated Run Time: 6.985316, 
+pid: p22, Arrival Time: 82.597626, Estimated Run Time: 2.4132214, 
+pid: p23, Arrival Time: 148.77306, Estimated Run Time: 0.79866236, 
+pid: p24, Arrival Time: 9.616959, Estimated Run Time: 6.655232, 
+pid: p25, Arrival Time: 24.206436, Estimated Run Time: 7.304027, 
+pid: p26, Arrival Time: 16.528404, Estimated Run Time: 2.1744199, 
+pid: p27, Arrival Time: 146.25204, Estimated Run Time: 0.41657403, 
+pid: p28, Arrival Time: 98.469376, Estimated Run Time: 5.9431543, 
+pid: p29, Arrival Time: 140.97058, Estimated Run Time: 0.6774192, 
+pid: p30, Arrival Time: 147.40013, Estimated Run Time: 1.9530753, 
+pid: p31, Arrival Time: 114.45834, Estimated Run Time: 4.9673014, 
+pid: p32, Arrival Time: 187.99147, Estimated Run Time: 2.4807518, 
+pid: p33, Arrival Time: 179.08835, Estimated Run Time: 4.7523527, 
+pid: p34, Arrival Time: 192.10959, Estimated Run Time: 8.830197, 
+pid: p35, Arrival Time: 9.887981, Estimated Run Time: 8.79343, 
+pid: p36, Arrival Time: 26.820898, Estimated Run Time: 9.424772, 
+pid: p37, Arrival Time: 0.6209016, Estimated Run Time: 7.6745653, 
+pid: p38, Arrival Time: 132.38736, Estimated Run Time: 6.562052, 
+pid: p39, Arrival Time: 112.94448, Estimated Run Time: 0.7605133, 
+pid: p40, Arrival Time: 65.64526, Estimated Run Time: 9.77883, 
+pid: p41, Arrival Time: 141.49538, Estimated Run Time: 0.25222978, 
+pid: p42, Arrival Time: 10.3419895, Estimated Run Time: 6.132309, 
+pid: p43, Arrival Time: 190.60776, Estimated Run Time: 0.5574883, 
+pid: p44, Arrival Time: 107.452324, Estimated Run Time: 3.068913, 
+pid: p45, Arrival Time: 165.41318, Estimated Run Time: 6.7026625, 
+pid: p46, Arrival Time: 31.342293, Estimated Run Time: 3.2284322, 
+pid: p47, Arrival Time: 115.252556, Estimated Run Time: 3.512994, 
+pid: p48, Arrival Time: 196.15138, Estimated Run Time: 4.7217197, 
+pid: p49, Arrival Time: 77.719284, Estimated Run Time: 6.350221, 
+pid: p50, Arrival Time: 63.306393, Estimated Run Time: 4.4010286, 
+**********
+FCFS Processes for Run: 2
+     Average turn-around time: 30.654156
+     Average waiting time: 25.654156
+     Average response time: 25.654156
+     Trough Put: 0.1992032
+**********
+**********
+SJF Processes for Run: 2
+     Average turn-around time: 16.294157
+     Average waiting time: 11.294159
+     Average response time: 11.294159
+     Trough Put: 0.24271844
+**********
+**********
+RR Processes for Run: 2
+     Average turn-around time: 38.71415
+     Average waiting time: 44.534157
+     Average response time: 11.294159
+     Trough Put: 0.1992032
+**********
+**********
+STATISTICS REPORT for RUN 3
+**********
+Queue Processes
+**********
+pid: p1, Arrival Time: 123.576614, Estimated Run Time: 3.2053385, 
+pid: p2, Arrival Time: 23.896801, Estimated Run Time: 4.419935, 
+pid: p3, Arrival Time: 113.174225, Estimated Run Time: 2.4402738, 
+pid: p4, Arrival Time: 115.71509, Estimated Run Time: 8.455454, 
+pid: p5, Arrival Time: 180.27136, Estimated Run Time: 9.694297, 
+pid: p6, Arrival Time: 11.360371, Estimated Run Time: 6.1840863, 
+pid: p7, Arrival Time: 130.56499, Estimated Run Time: 9.548697, 
+pid: p8, Arrival Time: 195.04817, Estimated Run Time: 8.669883, 
+pid: p9, Arrival Time: 125.32109, Estimated Run Time: 0.91469926, 
+pid: p10, Arrival Time: 20.223331, Estimated Run Time: 1.9291892, 
+pid: p11, Arrival Time: 179.28886, Estimated Run Time: 4.011057, 
+pid: p12, Arrival Time: 177.10994, Estimated Run Time: 7.0915337, 
+pid: p13, Arrival Time: 29.130257, Estimated Run Time: 1.0479412, 
+pid: p14, Arrival Time: 102.29045, Estimated Run Time: 1.8247304, 
+pid: p15, Arrival Time: 178.8437, Estimated Run Time: 4.809242, 
+pid: p16, Arrival Time: 96.66153, Estimated Run Time: 4.5140433, 
+pid: p17, Arrival Time: 137.3898, Estimated Run Time: 8.90462, 
+pid: p18, Arrival Time: 180.33957, Estimated Run Time: 1.7420334, 
+pid: p19, Arrival Time: 96.29588, Estimated Run Time: 0.15047595, 
+pid: p20, Arrival Time: 109.80028, Estimated Run Time: 2.6886427, 
+pid: p21, Arrival Time: 129.74579, Estimated Run Time: 9.312707, 
+pid: p22, Arrival Time: 137.36525, Estimated Run Time: 8.421141, 
+pid: p23, Arrival Time: 17.997587, Estimated Run Time: 8.44192, 
+pid: p24, Arrival Time: 157.85242, Estimated Run Time: 2.4298527, 
+pid: p25, Arrival Time: 31.48321, Estimated Run Time: 7.8277082, 
+pid: p26, Arrival Time: 191.66997, Estimated Run Time: 6.1210003, 
+pid: p27, Arrival Time: 5.3281665, Estimated Run Time: 8.377871, 
+pid: p28, Arrival Time: 55.861664, Estimated Run Time: 3.3835185, 
+pid: p29, Arrival Time: 73.10446, Estimated Run Time: 0.9618194, 
+pid: p30, Arrival Time: 10.738956, Estimated Run Time: 4.8070927, 
+pid: p31, Arrival Time: 8.342993, Estimated Run Time: 9.777153, 
+pid: p32, Arrival Time: 104.0197, Estimated Run Time: 1.9467868, 
+pid: p33, Arrival Time: 189.75157, Estimated Run Time: 1.0719737, 
+pid: p34, Arrival Time: 9.216892, Estimated Run Time: 6.4820595, 
+pid: p35, Arrival Time: 11.407816, Estimated Run Time: 3.2620935, 
+pid: p36, Arrival Time: 140.89189, Estimated Run Time: 0.42957187, 
+pid: p37, Arrival Time: 105.74235, Estimated Run Time: 2.986419, 
+pid: p38, Arrival Time: 174.93819, Estimated Run Time: 5.988291, 
+pid: p39, Arrival Time: 41.342533, Estimated Run Time: 4.6711836, 
+pid: p40, Arrival Time: 184.05049, Estimated Run Time: 1.7687944, 
+pid: p41, Arrival Time: 59.060062, Estimated Run Time: 9.286077, 
+pid: p42, Arrival Time: 171.84497, Estimated Run Time: 5.6065936, 
+pid: p43, Arrival Time: 81.29332, Estimated Run Time: 8.345057, 
+pid: p44, Arrival Time: 36.733986, Estimated Run Time: 8.550352, 
+pid: p45, Arrival Time: 186.45763, Estimated Run Time: 2.1904285, 
+pid: p46, Arrival Time: 179.7598, Estimated Run Time: 3.6421814, 
+pid: p47, Arrival Time: 102.497375, Estimated Run Time: 5.719875, 
+pid: p48, Arrival Time: 78.41043, Estimated Run Time: 4.459306, 
+pid: p49, Arrival Time: 11.906505, Estimated Run Time: 2.7280757, 
+pid: p50, Arrival Time: 148.36288, Estimated Run Time: 6.0281806, 
+**********
+FCFS Processes for Run: 3
+     Average turn-around time: 44.51038
+     Average waiting time: 39.090374
+     Average response time: 39.090374
+     Trough Put: 0.18050541
+**********
+**********
+SJF Processes for Run: 3
+     Average turn-around time: 21.750376
+     Average waiting time: 16.330378
+     Average response time: 16.330378
+     Trough Put: 0.18315019
+**********
+**********
+RR Processes for Run: 3
+     Average turn-around time: 59.610397
+     Average waiting time: 70.0104
+     Average response time: 16.330378
+     Trough Put: 0.18050541
+**********
+**********
+STATISTICS REPORT for RUN 4
+**********
+Queue Processes
+**********
+pid: p1, Arrival Time: 48.093094, Estimated Run Time: 3.1329331, 
+pid: p2, Arrival Time: 37.443256, Estimated Run Time: 8.447128, 
+pid: p3, Arrival Time: 43.667664, Estimated Run Time: 5.0605297, 
+pid: p4, Arrival Time: 140.86955, Estimated Run Time: 2.6404445, 
+pid: p5, Arrival Time: 166.33023, Estimated Run Time: 3.922359, 
+pid: p6, Arrival Time: 6.8382025, Estimated Run Time: 6.637443, 
+pid: p7, Arrival Time: 155.44833, Estimated Run Time: 3.8723261, 
+pid: p8, Arrival Time: 136.23851, Estimated Run Time: 0.62363285, 
+pid: p9, Arrival Time: 87.70249, Estimated Run Time: 1.6726888, 
+pid: p10, Arrival Time: 149.99947, Estimated Run Time: 8.328496, 
+pid: p11, Arrival Time: 131.06876, Estimated Run Time: 2.0504925, 
+pid: p12, Arrival Time: 128.66235, Estimated Run Time: 6.375636, 
+pid: p13, Arrival Time: 3.744471, Estimated Run Time: 0.15918739, 
+pid: p14, Arrival Time: 144.66739, Estimated Run Time: 8.827108, 
+pid: p15, Arrival Time: 84.89564, Estimated Run Time: 6.8659496, 
+pid: p16, Arrival Time: 117.48953, Estimated Run Time: 8.721252, 
+pid: p17, Arrival Time: 87.03164, Estimated Run Time: 2.5213468, 
+pid: p18, Arrival Time: 124.90243, Estimated Run Time: 6.158025, 
+pid: p19, Arrival Time: 178.76955, Estimated Run Time: 3.1603355, 
+pid: p20, Arrival Time: 20.96609, Estimated Run Time: 4.9606156, 
+pid: p21, Arrival Time: 95.05382, Estimated Run Time: 7.472008, 
+pid: p22, Arrival Time: 141.4554, Estimated Run Time: 5.6603403, 
+pid: p23, Arrival Time: 145.99481, Estimated Run Time: 0.46062866, 
+pid: p24, Arrival Time: 47.1313, Estimated Run Time: 8.935283, 
+pid: p25, Arrival Time: 44.950687, Estimated Run Time: 6.9389777, 
+pid: p26, Arrival Time: 69.38658, Estimated Run Time: 0.97706246, 
+pid: p27, Arrival Time: 133.99748, Estimated Run Time: 3.0944207, 
+pid: p28, Arrival Time: 114.3826, Estimated Run Time: 3.6080728, 
+pid: p29, Arrival Time: 56.33222, Estimated Run Time: 8.98186, 
+pid: p30, Arrival Time: 61.963524, Estimated Run Time: 3.3907607, 
+pid: p31, Arrival Time: 179.37761, Estimated Run Time: 3.8203816, 
+pid: p32, Arrival Time: 3.6491752, Estimated Run Time: 3.5263748, 
+pid: p33, Arrival Time: 131.47719, Estimated Run Time: 8.632192, 
+pid: p34, Arrival Time: 117.24976, Estimated Run Time: 5.5722113, 
+pid: p35, Arrival Time: 4.278481, Estimated Run Time: 2.3047652, 
+pid: p36, Arrival Time: 19.62186, Estimated Run Time: 2.0010161, 
+pid: p37, Arrival Time: 170.52335, Estimated Run Time: 1.9072298, 
+pid: p38, Arrival Time: 97.42959, Estimated Run Time: 4.694802, 
+pid: p39, Arrival Time: 154.43979, Estimated Run Time: 1.6380078, 
+pid: p40, Arrival Time: 40.24464, Estimated Run Time: 3.1170704, 
+pid: p41, Arrival Time: 103.833115, Estimated Run Time: 0.54683846, 
+pid: p42, Arrival Time: 20.796848, Estimated Run Time: 2.3251615, 
+pid: p43, Arrival Time: 186.99791, Estimated Run Time: 8.29551, 
+pid: p44, Arrival Time: 141.68094, Estimated Run Time: 5.699139, 
+pid: p45, Arrival Time: 64.538826, Estimated Run Time: 2.5189393, 
+pid: p46, Arrival Time: 32.46876, Estimated Run Time: 6.830079, 
+pid: p47, Arrival Time: 60.040985, Estimated Run Time: 6.003636, 
+pid: p48, Arrival Time: 100.22549, Estimated Run Time: 2.0816631, 
+pid: p49, Arrival Time: 21.342194, Estimated Run Time: 6.031851, 
+pid: p50, Arrival Time: 152.26804, Estimated Run Time: 3.1412315, 
+**********
+FCFS Processes for Run: 4
+     Average turn-around time: 38.900772
+     Average waiting time: 33.920765
+     Average response time: 33.920765
+     Trough Put: 0.19685039
+**********
+**********
+SJF Processes for Run: 4
+     Average turn-around time: 17.260767
+     Average waiting time: 12.280767
+     Average response time: 12.280767
+     Trough Put: 0.19685039
+**********
+**********
+RR Processes for Run: 4
+     Average turn-around time: 51.04077
+     Average waiting time: 57.880768
+     Average response time: 12.280767
+     Trough Put: 0.19685039
+**********
+**********
+STATISTICS REPORT for RUN 5
+**********
+Queue Processes
+**********
+pid: p1, Arrival Time: 102.88881, Estimated Run Time: 4.924988, 
+pid: p2, Arrival Time: 117.35814, Estimated Run Time: 0.7668615, 
+pid: p3, Arrival Time: 11.7369175, Estimated Run Time: 0.9264467, 
+pid: p4, Arrival Time: 129.75502, Estimated Run Time: 0.28178012, 
+pid: p5, Arrival Time: 94.9526, Estimated Run Time: 4.3489475, 
+pid: p6, Arrival Time: 185.17824, Estimated Run Time: 1.8534151, 
+pid: p7, Arrival Time: 188.38535, Estimated Run Time: 8.487454, 
+pid: p8, Arrival Time: 14.044619, Estimated Run Time: 6.7360883, 
+pid: p9, Arrival Time: 92.84556, Estimated Run Time: 6.6371875, 
+pid: p10, Arrival Time: 129.64426, Estimated Run Time: 6.4921203, 
+pid: p11, Arrival Time: 183.14905, Estimated Run Time: 3.3958695, 
+pid: p12, Arrival Time: 8.091283, Estimated Run Time: 2.6617985, 
+pid: p13, Arrival Time: 174.7897, Estimated Run Time: 4.09576, 
+pid: p14, Arrival Time: 65.93778, Estimated Run Time: 1.0369278, 
+pid: p15, Arrival Time: 132.02031, Estimated Run Time: 3.8118565, 
+pid: p16, Arrival Time: 9.030986, Estimated Run Time: 7.1907053, 
+pid: p17, Arrival Time: 7.6039433, Estimated Run Time: 7.678051, 
+pid: p18, Arrival Time: 2.5795102, Estimated Run Time: 7.7995715, 
+pid: p19, Arrival Time: 173.88435, Estimated Run Time: 9.448748, 
+pid: p20, Arrival Time: 124.8287, Estimated Run Time: 3.822238, 
+pid: p21, Arrival Time: 140.4321, Estimated Run Time: 4.734351, 
+pid: p22, Arrival Time: 163.85834, Estimated Run Time: 0.52568156, 
+pid: p23, Arrival Time: 161.80031, Estimated Run Time: 4.440626, 
+pid: p24, Arrival Time: 175.56815, Estimated Run Time: 8.414258, 
+pid: p25, Arrival Time: 179.44025, Estimated Run Time: 8.616007, 
+pid: p26, Arrival Time: 95.78897, Estimated Run Time: 3.1464727, 
+pid: p27, Arrival Time: 77.276146, Estimated Run Time: 2.8299162, 
+pid: p28, Arrival Time: 73.65869, Estimated Run Time: 8.082954, 
+pid: p29, Arrival Time: 76.64392, Estimated Run Time: 7.027664, 
+pid: p30, Arrival Time: 128.06471, Estimated Run Time: 8.391001, 
+pid: p31, Arrival Time: 172.20187, Estimated Run Time: 4.1527987, 
+pid: p32, Arrival Time: 13.336492, Estimated Run Time: 9.626067, 
+pid: p33, Arrival Time: 188.09581, Estimated Run Time: 7.3514814, 
+pid: p34, Arrival Time: 181.85567, Estimated Run Time: 5.98292, 
+pid: p35, Arrival Time: 188.30063, Estimated Run Time: 1.1416026, 
+pid: p36, Arrival Time: 45.345104, Estimated Run Time: 3.471072, 
+pid: p37, Arrival Time: 34.985043, Estimated Run Time: 2.7944167, 
+pid: p38, Arrival Time: 36.934628, Estimated Run Time: 3.0565488, 
+pid: p39, Arrival Time: 85.40264, Estimated Run Time: 2.2514827, 
+pid: p40, Arrival Time: 64.43804, Estimated Run Time: 2.6592429, 
+pid: p41, Arrival Time: 35.76945, Estimated Run Time: 8.333849, 
+pid: p42, Arrival Time: 1.4965177, Estimated Run Time: 6.4097166, 
+pid: p43, Arrival Time: 147.5422, Estimated Run Time: 2.453773, 
+pid: p44, Arrival Time: 95.3544, Estimated Run Time: 0.7076399, 
+pid: p45, Arrival Time: 68.282295, Estimated Run Time: 3.5577562, 
+pid: p46, Arrival Time: 64.169395, Estimated Run Time: 2.4655175, 
+pid: p47, Arrival Time: 129.82327, Estimated Run Time: 6.0203214, 
+pid: p48, Arrival Time: 27.175367, Estimated Run Time: 4.244126, 
+pid: p49, Arrival Time: 167.8255, Estimated Run Time: 7.1135674, 
+pid: p50, Arrival Time: 50.098194, Estimated Run Time: 6.4414988, 
+**********
+FCFS Processes for Run: 5
+     Average turn-around time: 37.14662
+     Average waiting time: 31.846617
+     Average response time: 31.846617
+     Trough Put: 0.18726592
+**********
+**********
+SJF Processes for Run: 5
+     Average turn-around time: 21.086615
+     Average waiting time: 15.786613
+     Average response time: 15.786613
+     Trough Put: 0.23809524
+**********
+**********
+RR Processes for Run: 5
+     Average turn-around time: 50.506626
+     Average waiting time: 60.506626
+     Average response time: 15.786613
+     Trough Put: 0.18726592
+**********
+**********
+Final Report for 5 Runs
+**********
+FCFS
+**********
+Average Turn Around Time: 38.897552
+Average Wait Time: 37.83755
+Average Responce Time: 37.83755
+Average Throughput: 37.83755
+SJF
+**********
+Average Turn Around Time: 19.081547
+Average Wait Time: 18.021547
+Average Responce Time: 18.021547
+Average Throughput: 18.021547
+RR
+**********
+Average Turn Around Time: 51.55355
+Average Wait Time: 53.55355
+Average Responce Time: 53.55355
+Average Throughput: 53.55355
